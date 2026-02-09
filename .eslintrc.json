@@ -1,0 +1,9 @@
+{
+    "extents": [
+        "react-app",
+        "react-app/jtest"
+    ],
+    "rules": {
+        "no-console": "error"
+    }
+}

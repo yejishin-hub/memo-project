@@ -1,9 +1,6 @@
 {
-    "extents": [
-        "react-app",
-        "react-app/jtest"
-    ],
-    "rules": {
-        "no-console": "error"
-    }
+  "extends": ["react-app"],
+  "rules": {
+    "no-console": "error"
+  }
 }

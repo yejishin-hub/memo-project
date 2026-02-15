@@ -50,10 +50,20 @@ function App() {
     setSelectedMemoIndex(memos.length); // 추가한 메모 선택
   };
 
+  const deleteMemo = (index) => {
+    const newMemos = [...memos];
+    newMemos.splice(index, 1);
+    setMemos(newMemos);
+    if (index === selectedMemoIndex) {
+      setSelectedMemoIndex(0);
+    }
+  };
+
   return (
     <div className="App">
       <SideBar
         memos={memos}
+        deleteMemo={deleteMemo}
         addMemo={addMemo}
         selectedMemoIndex={selectedMemoIndex}
         setSelectedMemoIndex={setSelectedMemoIndex}
